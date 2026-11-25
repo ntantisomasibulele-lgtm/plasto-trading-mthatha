@@ -1,108 +1,1194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plasto Trading Mthatha - Branding at another level</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f4f6ff;color:#0A1F5C}
-.top{background:#0A1F5C;color:#fff;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:bold}
-.top span:last-child{color:#FFD500}
-.hero{background:#fff;padding:28px 18px 22px;text-align:center}
-.logo-P{font-size:90px;font-weight:900;line-height:0.8;color:#0A1F5C;letter-spacing:-5px}
-.logo-P i{font-style:normal;color:#00AEEF}
-.swoosh{height:8px;border-radius:10px;background:linear-gradient(90deg,#00AEEF 0%,#EC008C 50%,#FFD500 100%);margin:8px 30px 10px}
-.logo-text{font-size:52px;font-weight:900;letter-spacing:-1px;color:#0A1F5C;line-height:1}
-.logo-text span{color:#ED1C24}
-.tag{font-family:Georgia,serif;font-style:italic;font-size:20px;color:#0A1F5C;margin-top:4px}
-.sub{font-size:13px;color:#666;margin-top:6px}
-h1{font-size:28px;margin:16px 0 6px}
-h1 span{color:#EC008C}
-p.hero-p{font-size:15px;color:#444;line-height:1.5}
-.btns{margin-top:16px;display:flex;gap:10px;justify-content:center}
-.btn{padding:13px 18px;border-radius:30px;font-weight:bold;text-decoration:none;font-size:14px;display:inline-block}
-.btn-green{background:#25D366;color:#fff}
-.btn-navy{background:#0A1F5C;color:#fff}
-.section{padding:20px 16px}
-.section h2{font-size:22px;margin-bottom:12px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.card{background:#fff;border-radius:14px;padding:16px 12px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
-.card b{display:block;font-size:14px;margin-top:6px}
-.card small{font-size:12px;color:#666}
-.card .icon{font-size:26px}
-.pill{display:inline-block;background:#FFD500;color:#0A1F5C;font-weight:bold;font-size:12px;padding:5px 10px;border-radius:20px;margin:2px}
-.steps{background:#0A1F5C;color:#fff;border-radius:16px;padding:18px}
-.steps div{margin:10px 0}
-.steps b{color:#FFD500}
-.gallery{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
-.gallery div{background:#fff;border-radius:12px;height:90px;display:flex;align-items:center;justify-content:center;font-size:28px}
-.footer{background:#0A1F5C;color:#fff;padding:22px 16px;text-align:center}
-.footer h3{font-size:22px}
-.footer p{font-size:14px;line-height:1.6;margin-top:8px;color:#ddd}
-.footer a{color:#25D366;font-weight:bold;text-decoration:none}
-.badge{background:#EC008C;color:#fff;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:bold;display:inline-block;margin-top:10px}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I and M Trading Enterprise — Branding at Another Level</title>
+  <meta name="description" content="Custom branding, apparel printing, embroidery, drinkware, and signage catalog for I and M Trading Enterprise." />
+  <meta property="og:title" content="I and M Trading Enterprise" />
+  <meta property="og:description" content="Custom branding, apparel printing, embroidery, drinkware, and signage catalog for I and M Trading Enterprise." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root {
+      --bg: #f4f6fb;
+      --surface: #ffffff;
+      --surface-muted: #f8fafd;
+      --navy: #0a1f5c;
+      --navy-deep: #071642;
+      --ink: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --cyan: #00aeef;
+      --magenta: #ec008c;
+      --gold: #ffd500;
+      --crimson: #dc2626;
+      --whatsapp: #128c4a;
+      --whatsapp-hover: #0e733c;
+      --radius-lg: 18px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --shadow-card: 0 2px 10px rgba(10, 31, 92, 0.06);
+      --shadow-hover: 0 8px 24px rgba(10, 31, 92, 0.12);
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    body.modal-open {
+      overflow: hidden;
+    }
+
+    .page-container {
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 0 16px 28px;
+    }
+
+    /* Top Bar */
+    .topbar {
+      background: var(--navy);
+      color: #ffffff;
+      padding: 12px 18px;
+      margin: 0 -16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    @media (min-width: 650px) {
+      .topbar {
+        margin: 14px 0 0;
+        border-radius: var(--radius-md) var(--radius-md) 0 0;
+      }
+    }
+
+    .topbar-brand {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .topbar-phone {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+      font-variant-numeric: tabular-nums;
+      padding: 4px 2px;
+    }
+
+    .topbar-phone:hover,
+    .topbar-phone:focus-visible {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    /* Hero */
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+      padding: 28px 20px 26px;
+      text-align: center;
+      box-shadow: var(--shadow-card);
+    }
+
+    .logo-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+
+    .brand-logo {
+      width: 100%;
+      max-width: 310px;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .hero-services-line {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.75rem, 5vw, 2.35rem);
+      line-height: 1.12;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: var(--magenta);
+    }
+
+    .hero-copy {
+      font-size: 15px;
+      color: var(--muted);
+      max-width: 48ch;
+      margin: 0 auto 20px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 11px 20px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid transparent;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: transform 160ms var(--ease), background-color 160ms var(--ease), box-shadow 160ms var(--ease);
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid var(--cyan);
+      outline-offset: 2px;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-whatsapp {
+      background: var(--whatsapp);
+      color: #ffffff;
+    }
+
+    .btn-whatsapp:hover {
+      background: var(--whatsapp-hover);
+      box-shadow: 0 4px 12px rgba(18, 140, 74, 0.25);
+    }
+
+    .btn-navy {
+      background: var(--navy);
+      color: #ffffff;
+    }
+
+    .btn-navy:hover {
+      background: var(--navy-deep);
+      box-shadow: 0 4px 12px rgba(10, 31, 92, 0.2);
+    }
+
+    .btn-outline {
+      background: var(--surface);
+      color: var(--navy);
+      border-color: var(--border);
+    }
+
+    .btn-outline:hover {
+      background: var(--surface-muted);
+      border-color: #cbd5e1;
+    }
+
+    .techniques-line {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--navy);
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+
+    .techniques-line span {
+      color: var(--muted);
+      margin: 0 6px;
+    }
+
+    /* Sections */
+    .section {
+      margin-top: 24px;
+    }
+
+    .section-header {
+      margin-bottom: 14px;
+    }
+
+    .section-header h2 {
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.015em;
+    }
+
+    .section-header p {
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+
+    /* Interactive Category Cards */
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    @media (min-width: 440px) {
+      .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .category-card {
+      appearance: none;
+      -webkit-appearance: none;
+      font: inherit;
+      text-align: left;
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-card);
+      transition: transform 180ms var(--ease), box-shadow 180ms var(--ease), border-color 180ms var(--ease);
+    }
+
+    .category-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+      border-color: #cbd5e1;
+    }
+
+    .category-card:focus-visible {
+      outline: 3px solid var(--cyan);
+      outline-offset: 2px;
+    }
+
+    .category-media {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background: #f1f5fb;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .category-media svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .category-media img.category-photo {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      background: #e2e8f0;
+    }
+
+    .category-fallback {
+      display: none;
+      width: 100%;
+      height: 100%;
+      background: #e2e8f0;
+      color: var(--navy);
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .category-fallback svg {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+    }
+
+    .category-fallback span {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .category-media.is-fallback img.category-photo {
+      display: none;
+    }
+
+    .category-media.is-fallback .category-fallback {
+      display: flex;
+    }
+
+    .category-body {
+      padding: 14px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 6px;
+    }
+
+    .category-meta {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .category-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.3;
+    }
+
+    .category-cta {
+      margin-top: auto;
+      padding-top: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--magenta);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* Steps Section */
+    .steps-card {
+      background: var(--navy);
+      color: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 22px 20px;
+      box-shadow: var(--shadow-card);
+    }
+
+    .steps-card h2 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 14px;
+      color: #ffffff;
+    }
+
+    .steps-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .step-item:first-child {
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .step-num {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--gold);
+      font-variant-numeric: tabular-nums;
+      min-width: 24px;
+      padding-top: 2px;
+    }
+
+    .step-item h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 2px;
+    }
+
+    .step-item p {
+      font-size: 13.5px;
+      color: #cbd5e1;
+    }
+
+    /* Contact Card */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px 20px;
+      text-align: center;
+      box-shadow: var(--shadow-card);
+    }
+
+    .contact-card h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 6px;
+    }
+
+    .contact-business {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--magenta);
+      margin-bottom: 14px;
+    }
+
+    .contact-details {
+      font-size: 14px;
+      color: var(--ink);
+      display: grid;
+      gap: 6px;
+      margin-bottom: 18px;
+    }
+
+    .contact-details a {
+      color: var(--navy);
+      font-weight: 700;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .contact-details a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    /* Mandatory Footer */
+    .site-footer {
+      margin-top: 20px;
+      padding: 16px 12px 4px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    /* Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(7, 22, 66, 0.62);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 12px;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 180ms var(--ease), visibility 180ms var(--ease);
+    }
+
+    @media (min-width: 520px) {
+      .modal-backdrop {
+        align-items: center;
+        padding: 20px;
+      }
+    }
+
+    .modal-backdrop.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .modal-dialog {
+      background: var(--surface);
+      width: 100%;
+      max-width: 540px;
+      max-height: 88vh;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 24px 48px rgba(7, 22, 66, 0.28);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transform: translateY(14px) scale(0.98);
+      transition: transform 200ms var(--ease);
+    }
+
+    .modal-backdrop.is-open .modal-dialog {
+      transform: translateY(0) scale(1);
+    }
+
+    .modal-header {
+      padding: 18px 20px 14px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--surface);
+    }
+
+    .modal-kicker {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--magenta);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 2px;
+    }
+
+    .modal-title {
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.25;
+    }
+
+    .modal-close {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 44px;
+      height: 44px;
+      margin: -8px -8px -8px 0;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      border-radius: 10px;
+      font-size: 24px;
+      line-height: 1;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background-color 150ms var(--ease), color 150ms var(--ease);
+    }
+
+    .modal-close:hover {
+      background: var(--surface-muted);
+      color: var(--navy);
+    }
+
+    .modal-close:focus-visible {
+      outline: 3px solid var(--cyan);
+      outline-offset: 2px;
+    }
+
+    .modal-body {
+      padding: 16px 20px 20px;
+      overflow-y: auto;
+      display: grid;
+      gap: 12px;
+    }
+
+    .price-item {
+      background: var(--surface-muted);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @media (min-width: 460px) {
+      .price-item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+      }
+    }
+
+    .price-info {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .price-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .price-value {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--navy);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .btn-item-wa {
+      background: var(--whatsapp);
+      color: #ffffff;
+      padding: 10px 14px;
+      min-height: 44px;
+      border-radius: 9px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background-color 150ms var(--ease), transform 150ms var(--ease);
+    }
+
+    .btn-item-wa:hover {
+      background: var(--whatsapp-hover);
+    }
+
+    .btn-item-wa:focus-visible {
+      outline: 3px solid var(--cyan);
+      outline-offset: 2px;
+    }
+
+    .modal-footer {
+      padding: 14px 20px;
+      border-top: 1px solid var(--border);
+      background: var(--surface-muted);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .modal-footer a {
+      color: var(--navy);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .modal-footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="top"><span>PLASTO TRADING • MTHATHA</span><span>061 505 8846</span></div>
+  <div class="page-container">
+    <!-- Top Bar -->
+    <header class="topbar">
+      <span class="topbar-brand">I AND M TRADING ENTERPRISE</span>
+      <a class="topbar-phone" href="tel:+27614056080" aria-label="Call 061 405 6080">061 405 6080</a>
+    </header>
 
-<div class="hero">
-  <div class="logo-P">P<i>~</i></div>
-  <div class="swoosh"></div>
-  <div class="logo-text">Plasto <span>TRADING</span></div>
-  <div class="tag">Branding at another level.</div>
-  <div class="sub">UNIFORMS • BRANDING • PRINTING • PROMOTIONAL PRODUCTS</div>
-  <h1>YOU DREAM IT.<br><span>WE PRINT IT.</span></h1>
-  <p class="hero-p">T-Shirts, Embroidery, Office Branding & Car Branding in Mthatha. Fast quotes, quality that lasts.</p>
-  <div class="btns">
-    <a class="btn btn-green" href="https://wa.me/27615058846?text=Hi%20Plasto%20Trading!%20I%20want%20a%20quote%20for%20printing">WhatsApp Us Now</a>
-    <a class="btn btn-navy" href="https://wa.me/27615058846?text=Hi%20Plasto%20Trading!%20I%20want%20a%20quote">Get A Quote</a>
+    <!-- Hero -->
+    <section class="hero" aria-label="Introduction">
+      <div class="logo-wrap">
+        <img class="brand-logo" src="/assets/aistudio/WhatsApp_Image_2026-11-25_at_12.56.44_68e47740.jpeg" alt="Plasto Trading - Branding at another level" referrerpolicy="no-referrer" />
+      </div>
+
+      <p class="hero-services-line">Apparel · Embroidery · Drinkware · Signage</p>
+      <h1>You Dream It.<br /><span>We Print It.</span></h1>
+      <p class="hero-copy">Custom branded t-shirts, traditional &amp; embroidered wear, mugs, and welcome boards. Fast quotes and durable print quality.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-whatsapp" href="https://wa.me/27614056080?text=Hi%20I%20and%20M%20Trading%20Enterprise!%20I%20would%20like%20a%20quote%20for%20branding%20and%20printing." target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.79 14.01c-.24.68-1.42 1.3-1.95 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.94-4.38-.14-.19-1.18-1.57-1.18-3 0-1.43.75-2.13 1.01-2.42.27-.29.58-.36.77-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.13.59.17.29.75 1.23 1.61 1.99 1.1.98 2.04 1.29 2.33 1.43.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.39-.24.65-.14.27.1 1.69.8 1.98.94.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/>
+          </svg>
+          WhatsApp Us Now
+        </a>
+        <a class="btn btn-navy" href="tel:+27614056080">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          Call 061 405 6080
+        </a>
+      </div>
+
+      <p class="techniques-line">
+        Vinyl Branding<span>·</span>Sublimation<span>·</span>Embroidery<span>·</span>A3 Signage
+      </p>
+    </section>
+
+    <!-- Interactive Services & Pricing Catalog -->
+    <main>
+      <section class="section" aria-labelledby="what-we-do-heading">
+        <div class="section-header">
+          <h2 id="what-we-do-heading">What We Do</h2>
+          <p>Tap any category card to view items, prices, and order directly on WhatsApp.</p>
+        </div>
+
+        <div class="catalog-grid">
+          <!-- Category 1: Branded Apparel & T-Shirts -->
+          <button type="button" class="category-card" data-category="apparel">
+            <div class="category-media">
+              <img class="category-photo" src="tshirts.jpg" alt="Branded Apparel &amp; T-Shirts" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('is-fallback')" />
+              <div class="category-fallback" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z" />
+                </svg>
+                <span>Branded Apparel &amp; T-Shirts</span>
+              </div>
+            </div>
+            <div class="category-body">
+              <span class="category-meta">3 items · From R200</span>
+              <span class="category-title">Branded Apparel &amp; T-Shirts</span>
+              <span class="category-cta">View Prices &rarr;</span>
+            </div>
+          </button>
+
+          <!-- Category 2: Embroidery & Traditional Wear -->
+          <button type="button" class="category-card" data-category="embroidery">
+            <div class="category-media">
+              <img class="category-photo" src="embroidery.jpg" alt="Embroidery &amp; Traditional Wear" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('is-fallback')" />
+              <div class="category-fallback" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3a3 3 0 0 0-3 3v12a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Z" />
+                  <path d="M9 9h6M9 13h6M9 17h6" />
+                  <path d="M6 7h3M15 7h3M6 17h3M15 17h3" />
+                </svg>
+                <span>Embroidery &amp; Traditional Wear</span>
+              </div>
+            </div>
+            <div class="category-body">
+              <span class="category-meta">2 items · From R200</span>
+              <span class="category-title">Embroidery &amp; Traditional Wear</span>
+              <span class="category-cta">View Prices &rarr;</span>
+            </div>
+          </button>
+
+          <!-- Category 3: Cups & Drinkware -->
+          <button type="button" class="category-card" data-category="drinkware">
+            <div class="category-media">
+              <img class="category-photo" src="drinkware.jpg" alt="Cups &amp; Drinkware" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('is-fallback')" />
+              <div class="category-fallback" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 8h1a4 4 0 1 1 0 8h-1" />
+                  <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
+                  <line x1="6" x2="6" y1="2" y2="4" />
+                  <line x1="10" x2="10" y1="2" y2="4" />
+                  <line x1="14" x2="14" y1="2" y2="4" />
+                </svg>
+                <span>Cups &amp; Drinkware</span>
+              </div>
+            </div>
+            <div class="category-body">
+              <span class="category-meta">2 items · From R120</span>
+              <span class="category-title">Cups &amp; Drinkware</span>
+              <span class="category-cta">View Prices &rarr;</span>
+            </div>
+          </button>
+
+          <!-- Category 4: Boards & Signage -->
+          <button type="button" class="category-card" data-category="signage">
+            <div class="category-media">
+              <img class="category-photo" src="signage.jpg" alt="Boards &amp; Signage" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('is-fallback')" />
+              <div class="category-fallback" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="3" width="16" height="13" rx="2" />
+                  <path d="M8 21l2-5M16 21l-2-5M7 8h10M7 12h6" />
+                </svg>
+                <span>Boards &amp; Signage</span>
+              </div>
+            </div>
+            <div class="category-body">
+              <span class="category-meta">1 item · R350</span>
+              <span class="category-title">Boards &amp; Signage</span>
+              <span class="category-cta">View Prices &rarr;</span>
+            </div>
+          </button>
+
+          <!-- Category 5: Car & Fleet Branding -->
+          <button type="button" class="category-card" data-category="car-fleet">
+            <div class="category-media">
+              <img class="category-photo" src="car-branding.jpg" alt="Car &amp; Fleet Branding" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('is-fallback')" />
+              <div class="category-fallback" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2" />
+                  <circle cx="6.5" cy="16.5" r="2.5" />
+                  <circle cx="16.5" cy="16.5" r="2.5" />
+                </svg>
+                <span>Car &amp; Fleet Branding</span>
+              </div>
+            </div>
+            <div class="category-body">
+              <span class="category-meta">3 items · Quote on Request</span>
+              <span class="category-title">Car &amp; Fleet Branding</span>
+              <span class="category-cta">View Options &rarr;</span>
+            </div>
+          </button>
+
+          <!-- Category 6: Office & Shopfront Branding -->
+          <button type="button" class="category-card" data-category="office-shopfront">
+            <div class="category-media">
+              <img class="category-photo" src="office-branding.jpg" alt="Office &amp; Shopfront Branding" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('is-fallback')" />
+              <div class="category-fallback" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 21h18" />
+                  <path d="M5 21V7l8-4v18" />
+                  <path d="M19 21V11l-6-4" />
+                  <path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01" />
+                </svg>
+                <span>Office &amp; Shopfront Branding</span>
+              </div>
+            </div>
+            <div class="category-body">
+              <span class="category-meta">3 items · Quote on Request</span>
+              <span class="category-title">Office &amp; Shopfront Branding</span>
+              <span class="category-cta">View Options &rarr;</span>
+            </div>
+          </button>
+
+          <!-- Category 7: Pull-Up & Event Banners -->
+          <button type="button" class="category-card" data-category="banners">
+            <div class="category-media">
+              <img class="category-photo" src="pull-up-banner.jpg" alt="Pull-Up &amp; Event Banners" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('is-fallback')" />
+              <div class="category-fallback" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="6" y="3" width="12" height="15" rx="1.5" />
+                  <path d="M4 21h16" />
+                  <path d="M12 18v3" />
+                  <path d="M9 8h6M9 12h6" />
+                </svg>
+                <span>Pull-Up &amp; Event Banners</span>
+              </div>
+            </div>
+            <div class="category-body">
+              <span class="category-meta">3 items · Quote on Request</span>
+              <span class="category-title">Pull-Up &amp; Event Banners</span>
+              <span class="category-cta">View Options &rarr;</span>
+            </div>
+          </button>
+
+          <!-- Category 8: Canvas Prints & Wall Art -->
+          <button type="button" class="category-card" data-category="canvas">
+            <div class="category-media">
+              <img class="category-photo" src="canvas-print.jpg" alt="Canvas Prints &amp; Wall Art" referrerpolicy="no-referrer" onerror="this.parentElement.classList.add('is-fallback')" />
+              <div class="category-fallback" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="16" rx="2" />
+                  <circle cx="8.5" cy="9.5" r="1.5" />
+                  <path d="m21 15-5-5L5 20" />
+                </svg>
+                <span>Canvas Prints &amp; Wall Art</span>
+              </div>
+            </div>
+            <div class="category-body">
+              <span class="category-meta">3 items · Quote on Request</span>
+              <span class="category-title">Canvas Prints &amp; Wall Art</span>
+              <span class="category-cta">View Options &rarr;</span>
+            </div>
+          </button>
+        </div>
+      </section>
+
+      <!-- How To Order -->
+      <section class="section" aria-labelledby="how-to-order-heading">
+        <div class="steps-card">
+          <h2 id="how-to-order-heading">How To Order in 3 Steps</h2>
+          <div class="steps-list">
+            <div class="step-item">
+              <span class="step-num">01</span>
+              <div>
+                <h3>Send Your Logo or Idea</h3>
+                <p>Tap any item above or message us on WhatsApp with your artwork and quantity.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <span class="step-num">02</span>
+              <div>
+                <h3>Confirm Your Quote</h3>
+                <p>Clear pricing in Rands and fast turnaround timelines with no hidden fees.</p>
+              </div>
+            </div>
+            <div class="step-item">
+              <span class="step-num">03</span>
+              <div>
+                <h3>We Print &amp; Finish</h3>
+                <p>Crisp, durable branding ready for collection or delivery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section" aria-labelledby="contact-heading">
+        <div class="contact-card">
+          <h2 id="contact-heading">Ready to Brand Your Business?</h2>
+          <p class="contact-business">I and M Trading Enterprise</p>
+          <div class="contact-details">
+            <div>Call / WhatsApp: <a href="tel:+27614056080">061 405 6080</a></div>
+            <div>Email: <a href="mailto:iandmtradingenterprise@gmail.com">iandmtradingenterprise@gmail.com</a></div>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-whatsapp" href="https://wa.me/27614056080?text=Hi%20I%20and%20M%20Trading%20Enterprise!%20I%20would%20like%20to%20place%20an%20order%20or%20request%20a%20quote." target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+            <a class="btn btn-outline" href="mailto:iandmtradingenterprise@gmail.com?subject=Branding%20%26%20Printing%20Inquiry">Send Email</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Mandatory Footer -->
+    <footer class="site-footer">Designed by Capstech Studio 065 616 7588</footer>
   </div>
-  <div style="margin-top:14px"><span class="pill">Embroidery</span> <span class="pill">DTF</span> <span class="pill">Heat Press</span> <span class="pill">Sublimation</span></div>
-</div>
 
-<div class="section">
-  <h2>What We Do</h2>
-  <div class="grid">
-    <div class="card"><div class="icon">👕</div><b>T-Shirt Printing</b><small>Custom tees, DTF, vinyl, bulk</small></div>
-    <div class="card"><div class="icon">🧵</div><b>Embroidery</b><small>Golf shirts, caps, jackets</small></div>
-    <div class="card"><div class="icon">🏢</div><b>Office Branding</b><small>Stickers, banners, signage</small></div>
-    <div class="card"><div class="icon">🚗</div><b>Car Branding</b><small>Wraps, magnets, fleet</small></div>
-    <div class="card"><div class="icon">☂️</div><b>Umbrella Printing</b><small>Branded umbrellas</small></div>
-    <div class="card"><div class="icon">🪧</div><b>Pull-up Banners</b><small>Events & expos</small></div>
-    <div class="card"><div class="icon">🖼️</div><b>Canvas Prints</b><small>Photos & art on canvas</small></div>
-    <div class="card"><div class="icon">🎁</div><b>Promo Products</b><small>Gifts & giveaways</small></div>
+  <!-- Interactive Pricing Modal -->
+  <div class="modal-backdrop" id="catalogModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <div class="modal-kicker" id="modalKicker">Service Pricing</div>
+          <h2 class="modal-title" id="modalTitle">Category</h2>
+        </div>
+        <button type="button" class="modal-close" id="modalCloseBtn" aria-label="Close pricing popup">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-footer">
+        <span>Need bulk pricing or custom artwork?</span>
+        <a id="modalCustomWa" href="https://wa.me/27614056080" target="_blank" rel="noopener noreferrer">Chat on WhatsApp &rarr;</a>
+      </div>
+    </div>
   </div>
-</div>
 
-<div class="section">
-  <div class="steps">
-    <h2 style="color:#fff">How To Order In 3 Steps</h2>
-    <div><b>1. SEND YOUR LOGO</b><br>WhatsApp your logo / idea to us</div>
-    <div><b>2. WE QUOTE IN MINUTES</b><br>Price + time, no hidden fees</div>
-    <div><b>3. WE PRINT & YOU COLLECT</b><br>47 Eagle St, near Ncedo Taxi Rank</div>
-  </div>
-</div>
+  <script>
+    (function () {
+      var WHATSAPP_NUMBER = "27614056080";
 
-<div class="section">
-  <h2>Our Work</h2>
-  <div class="gallery">
-    <div>👕</div><div>🧢</div><div>🚗</div>
-    <div>🏢</div><div>☂️</div><div>🪧</div>
-  </div>
-  <p style="font-size:13px;color:#666;margin-top:8px">* Replace these with your real photos of tees, polos, car branding & stickers.</p>
-</div>
+      var CATALOG = {
+        apparel: {
+          title: "Branded Apparel & T-Shirts",
+          kicker: "Apparel Catalog",
+          items: [
+            { name: "T-Shirt (Vinyl Branded)", price: "R200" },
+            { name: "T-Shirt (Sublimation Full-Print)", price: "R320" },
+            { name: "Golf T-Shirt", price: "R250" }
+          ]
+        },
+        embroidery: {
+          title: "Embroidery & Traditional Wear",
+          kicker: "Embroidery & Heritage",
+          items: [
+            { name: "Embroidered Apron", price: "R200" },
+            { name: "Branded Shawls", price: "R200" }
+          ]
+        },
+        drinkware: {
+          title: "Cups & Drinkware",
+          kicker: "Custom Drinkware",
+          items: [
+            { name: "Breakable Cup (Single)", price: "R120" },
+            { name: "Pack of 6 Branded Cups", price: "R750" }
+          ]
+        },
+        signage: {
+          title: "Boards & Signage",
+          kicker: "Display & Events",
+          items: [
+            { name: "Welcome Board (A3 Size)", price: "R350" }
+          ]
+        },
+        "car-fleet": {
+          title: "Car & Fleet Branding",
+          kicker: "Vehicle & Fleet Graphics",
+          quotePrefix: "Hi, I would like a quote for Car & Fleet Branding",
+          items: [
+            { name: "Full Vehicle Wrap", price: "Quote on Request" },
+            { name: "Magnetic Car Door Signs", price: "Quote on Request" },
+            { name: "Back Window Perforated Vinyl", price: "Quote on Request" }
+          ]
+        },
+        "office-shopfront": {
+          title: "Office & Shopfront Branding",
+          kicker: "Commercial & Retail Signage",
+          quotePrefix: "Hi, I would like a quote for Office & Shopfront Branding",
+          items: [
+            { name: "Frosted Window Vinyl", price: "Quote on Request" },
+            { name: "3D Reception Wall Signage", price: "Quote on Request" },
+            { name: "Shopfront Fascia Board", price: "Quote on Request" }
+          ]
+        },
+        banners: {
+          title: "Pull-Up & Event Banners",
+          kicker: "Displays & Outdoor Media",
+          quotePrefix: "Hi, I would like a quote for Pull-Up & Event Banners",
+          items: [
+            { name: "Standard Pull-Up Banner (850x2000mm)", price: "Quote on Request" },
+            { name: "Teardrop / Sharkfin Flag", price: "Quote on Request" },
+            { name: "Outdoor PVC Banner", price: "Quote on Request" }
+          ]
+        },
+        canvas: {
+          title: "Canvas Prints & Wall Art",
+          kicker: "Custom Framed Canvas",
+          quotePrefix: "Hi, I would like a quote for Canvas Prints & Wall Art",
+          items: [
+            { name: "A3 Custom Canvas Print", price: "Quote on Request" },
+            { name: "A2 Custom Canvas Print", price: "Quote on Request" },
+            { name: "A1 Large Canvas Print", price: "Quote on Request" }
+          ]
+        }
+      };
 
-<div class="footer">
-  <h3>READY TO BRAND YOUR BUSINESS?</h3>
-  <span class="badge">PLASTO TRADING MTHATHA</span>
-  <p>Call / WhatsApp: <a href="https://wa.me/27615058846">061 505 8846</a><br>
-  Email: mawandendamane@ymail.com<br>
-  47 Eagle Street, Mthatha<br>near Ncedo Taxi Rank</p>
-  <p style="font-size:12px;color:#999;margin-top:12px">Demo website by Capstech Studios • GitHub + Vercel ready</p>
-</div>
+      var modal = document.getElementById("catalogModal");
+      var modalTitle = document.getElementById("modalTitle");
+      var modalKicker = document.getElementById("modalKicker");
+      var modalBody = document.getElementById("modalBody");
+      var modalCloseBtn = document.getElementById("modalCloseBtn");
+      var modalCustomWa = document.getElementById("modalCustomWa");
+      var lastFocusedElement = null;
 
+      function buildWhatsAppUrl(message) {
+        return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+      }
+
+      function createWhatsAppIcon() {
+        var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+        svg.setAttribute("width", "16");
+        svg.setAttribute("height", "16");
+        svg.setAttribute("viewBox", "0 0 24 24");
+        svg.setAttribute("fill", "currentColor");
+        svg.setAttribute("aria-hidden", "true");
+        var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        path.setAttribute("d", "M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.79 14.01c-.24.68-1.42 1.3-1.95 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.18-4.94-4.38-.14-.19-1.18-1.57-1.18-3 0-1.43.75-2.13 1.01-2.42.27-.29.58-.36.77-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.13.59.17.29.75 1.23 1.61 1.99 1.1.98 2.04 1.29 2.33 1.43.29.14.46.12.63-.07.17-.19.72-.84.91-1.13.19-.29.39-.24.65-.14.27.1 1.69.8 1.98.94.29.14.48.22.55.34.07.12.07.7-.17 1.38z");
+        svg.appendChild(path);
+        return svg;
+      }
+
+      function openCategoryModal(categoryKey, triggerEl) {
+        var data = CATALOG[categoryKey];
+        if (!data) return;
+
+        lastFocusedElement = triggerEl || document.activeElement;
+        modalKicker.textContent = data.kicker;
+        modalTitle.textContent = data.title;
+        modalBody.innerHTML = "";
+
+        data.items.forEach(function (item) {
+          var row = document.createElement("div");
+          row.className = "price-item";
+
+          var info = document.createElement("div");
+          info.className = "price-info";
+
+          var nameEl = document.createElement("span");
+          nameEl.className = "price-name";
+          nameEl.textContent = item.name;
+
+          var priceEl = document.createElement("span");
+          priceEl.className = "price-value";
+          priceEl.textContent = item.price;
+
+          info.appendChild(nameEl);
+          info.appendChild(priceEl);
+
+          var waMessage = data.quotePrefix
+            ? data.quotePrefix + " (" + item.name + ")"
+            : "Hi I and M Trading Enterprise! I would like to order / inquire about: " + item.name + " (" + item.price + ").";
+
+          var waBtn = document.createElement("a");
+          waBtn.className = "btn-item-wa";
+          waBtn.href = buildWhatsAppUrl(waMessage);
+          waBtn.target = "_blank";
+          waBtn.rel = "noopener noreferrer";
+          waBtn.appendChild(createWhatsAppIcon());
+          waBtn.appendChild(document.createTextNode("Order / Inquire on WhatsApp"));
+
+          row.appendChild(info);
+          row.appendChild(waBtn);
+          modalBody.appendChild(row);
+        });
+
+        modalCustomWa.href = buildWhatsAppUrl(
+          data.quotePrefix
+            ? data.quotePrefix
+            : "Hi I and M Trading Enterprise! I have a custom inquiry for " + data.title + "."
+        );
+
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("modal-open");
+        modalCloseBtn.focus();
+      }
+
+      function closeModal() {
+        if (!modal.classList.contains("is-open")) return;
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("modal-open");
+        if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
+          lastFocusedElement.focus();
+        }
+      }
+
+      var categoryCards = document.querySelectorAll(".category-card[data-category]");
+      categoryCards.forEach(function (card) {
+        card.addEventListener("click", function () {
+          openCategoryModal(card.getAttribute("data-category"), card);
+        });
+      });
+
+      modalCloseBtn.addEventListener("click", closeModal);
+
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && modal.classList.contains("is-open")) {
+          closeModal();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
