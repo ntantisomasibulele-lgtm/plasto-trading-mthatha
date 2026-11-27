@@ -125,12 +125,42 @@
     }
 
     .brand-logo {
-      width: 100%;
-      max-width: 310px;
-      height: auto;
       display: block;
+      width: 280px;
+      max-width: 100%;
+      height: auto;
       margin: 0 auto;
       object-fit: contain;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .brand-logo-fallback {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      border-radius: 12px;
+      background: #f8fafd;
+      border: 1px solid var(--border);
+      margin: 0 auto;
+    }
+
+    .brand-logo-fallback strong {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      color: var(--navy);
+      line-height: 1.15;
+    }
+
+    .brand-logo-fallback span {
+      font-size: 12.5px;
+      font-style: italic;
+      font-weight: 600;
+      color: var(--crimson);
+      margin-top: 3px;
     }
 
     .hero-services-line {
@@ -731,7 +761,7 @@
     <!-- Hero -->
     <section class="hero" aria-label="Introduction">
       <div class="logo-wrap">
-        <img class="brand-logo" src="logo.png" alt="Plasto Trading — Branding at another level." />
+        <img src="./logo.png" alt="Plasto Trading — Branding at another level." class="brand-logo" onerror="var a=['./logo.jpg','./logo.jpeg','./Logo.png'],i=+(this.dataset.i||0);if(i<a.length){this.dataset.i=i+1;this.src=a[i];}else{this.onerror=null;var d=document.createElement('div');d.className='brand-logo-fallback';d.innerHTML='<strong>PLASTO TRADING</strong><span>Branding at another level.</span>';this.replaceWith(d);}" />
       </div>
 
       <p class="hero-services-line">Apparel · Embroidery · Drinkware · Signage</p>
